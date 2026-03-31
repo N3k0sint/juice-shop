@@ -16,3 +16,5 @@ jobs:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
           args: --severity-threshold=high
+        with:
+          args: --severity-threshold=high --json-file-output=snyk-results.json
